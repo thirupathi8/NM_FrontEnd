@@ -7,7 +7,7 @@ import UploadPdfDialog from './UploadPdfDialog'
 const Sidebar = ({ onPdfUploadComplete  }) => {
     return (
         <div style={{ boxShadow: '0 4px 6px rgba(153, 153, 153)' }} className='p-7 h-screen'>
-            <img src="src\assets\logo.svg" alt="logo" width={120} height={120} />
+            <img src="/logo.svg" alt="logo" width={120} height={120} />
             <div className='mt-10'>
                 <UploadPdfDialog onUploadComplete={onPdfUploadComplete}>
                     <Button className="w-full">+ Upload PDF</Button>
