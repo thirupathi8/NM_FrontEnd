@@ -31,7 +31,7 @@ const Page = ({ onPdfSelect, fetchKey }) => {
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-10'>
         {pdfs.length > 0 ? pdfs?.map((pdf, index) => (
           <div key={index} onClick={() => onPdfSelect(pdf)} className='flex p-5 shadow-md rounded-md flex-col items-center justify-center border cursor-pointer hover:scale-105 transition-all'>
-            <img src="src\assets\pdf.png" alt="pdf" width={50} height={50} />
+            <img src="/pdf.png" alt="pdf" width={50} height={50} />
             <h2 className='mt-3 font-medium text-lg'>{pdf.title}</h2>
           </div>
         )) : ([1, 2, 3, 4, 5, 6, 7].map((item, index) => (
